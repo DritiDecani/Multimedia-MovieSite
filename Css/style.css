@@ -24,6 +24,9 @@
 a{
     text-decoration: none;
 }
+section{
+    padding:3rem 0 2rem;
+}
 li{
     list-style: none;
 }
@@ -93,6 +96,7 @@ header{
     color: var(--text-color);
     background: transparent;
     font-size: 0.938rem;
+    display: flex !important;
 }
 /*User*/
 .user{
