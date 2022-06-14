@@ -13,13 +13,26 @@
 
 
 
-/*Some variables*/
+/* Some variables */
 :root{
     --main-color: #ffb43a;
     --hover-color: hsl(37,94%,57%);
     --body-color: #1e1e2a;
     --container-color: #2d2e37;
     --text-color: #fcfeff;
+}
+/* Costum Scroll Bar */
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+/* Selection Color */
+::selection {
+    background: var(--main-color);
+    color: var(--text-color);
 }
 a{
     text-decoration: none;
@@ -441,4 +454,38 @@ font-weight: 600;
     height: 180px;
     object-fit: cover;
     object-position: center;
+}
+
+/* Download */
+.download {
+    max-width: 800px;
+    width: 1005;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.download-title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1.6rem;
+    color: var(--main-color);
+}
+.download-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+.download-links a {
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 12px 24px;
+    color: var(--body-color);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.download-links a:hover{
+    background: var(--hover-color);
 }
