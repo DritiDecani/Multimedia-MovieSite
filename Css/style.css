@@ -508,5 +508,11 @@ font-weight: 600;
             hsl(240 17% 14% / 90%)100%,
 
         );
+         .nav-link .bx{
+        font-size: 1.5rem;
+    }
+    .copyright{
+        margin-bottom: 4rem;
+    }
     }
     
