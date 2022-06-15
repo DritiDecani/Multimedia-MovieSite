@@ -514,5 +514,10 @@ font-weight: 600;
     .copyright{
         margin-bottom: 4rem;
     }
+ }
+@media(max-width:1060px) {
+.container{
+    margin: 0 auto;
+    width: 95%;
     }
-    
+}
