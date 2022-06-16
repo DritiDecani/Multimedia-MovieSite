@@ -640,5 +640,44 @@ font-weight: 600;
         width: 100%;
         border-radius: 4px;
         order: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .home,.play-container {
+        margin-top: 7rem !important;
+    }
+    .movie-box{
+        height: 300px;
+    }
+    .movies-content{
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        gap: 1rem;
+    }
+}
+/*For small devices*/
+@media(max-width: 370px){
+    .home{
+        min-height: 300px;
+    }
+    .movie-box{
+        height: 285px;
+    }
+    .user-img,
+    .watch-btn .bx{
+        width: 35px;
+        height: 35px;
+    }
+    .navbar{
+        justify-content: space-around;
+        padding: 8px 0;
+    }
+    .watch-btn .bx{
+        font-size: 1.4rem;
+    }
+    .about-movie p{
+        text-align: justify;
+    }
+    .download-links{
+        grid-template-columns: 1fr;
     }
 }
