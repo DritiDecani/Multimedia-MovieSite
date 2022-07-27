@@ -9,6 +9,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background: linear-gradient(to right, #101111f3, #395168);
 }
 .main{
 	position: relative;
@@ -17,7 +18,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(to right, #5D6D7E, #566573);
+	background: linear-gradient(to right, #202b36, #566573);
 }
 .main button{
 	padding: 10px 12px;
